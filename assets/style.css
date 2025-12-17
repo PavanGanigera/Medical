@@ -135,6 +135,8 @@ header {
 }
 
 .info-box {
+  width: 80%;
+  margin: 0 auto;
   background: #fff;
   border-radius: 22px;
   padding: 25px;
@@ -180,7 +182,7 @@ header {
 
 
 /* FAQ */
-.accordion{
+.accordion {
   width: 80%;
   margin: auto;
 }
@@ -600,9 +602,20 @@ header {
     gap: 20px;
     justify-content: center;
   }
+
+  .info-box {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
-/* @media (max-width: 576px) {
+@media (max-width: 992px) {
+  .info-box {
+    width: 100%;
+  }
+}
+
+  /* @media (max-width: 576px) {
   .nav-links {
     display: none;
   }
