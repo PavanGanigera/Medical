@@ -603,6 +603,80 @@ header {
   box-shadow: none;
 }
 
+.contact-section{
+  padding: 100px 0;
+  background: #f1fafa;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-container{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT */
+.contact-info h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #083c3a;
+  margin-bottom: 16px;
+}
+
+.contact-info p{
+  color: #5f7d7c;
+  max-width: 450px;
+}
+
+
+/* RIGHT FORM */
+.contact-form{
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.08);
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #dceeee;
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline: none;
+  border-color: #0b8f8a;
+}
+
+.contact-form button{
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 999px;
+  background: #0b8f8a;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+
+.contact-form button:hover{
+  background: #066f6b;
+}
+
+
 
 
 /* ================= RESPONSIVE ================= */
