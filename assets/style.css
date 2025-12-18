@@ -55,7 +55,7 @@ header {
 
 .navbar {
   background: #fff;
-  border-radius: 40px;
+  border-radius: 30px;
   padding: 15px 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
   backdrop-filter: blur(20px);
@@ -64,11 +64,43 @@ header {
   width: 100%;
 }
 
+
+
 .nav-link {
   font-family: 'Poppins';
   font-weight: 500;
   color: var(--heading);
+  position: relative;
 }
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px;
+  border-radius: 0px 0px 8px 8px;
+  background: var(--primary);
+  left: 0;
+  bottom: -6px;
+  transition: width 0.3s;
+  opacity: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  opacity: 1;
+  color: var(--primary);
+}
+
 
 .btn-primary {
   background: var(--primary);
@@ -613,6 +645,13 @@ header {
   .info-box {
     width: 100%;
   }
+}
+
+@media (min-width: 1600px){
+  .hero-info {
+    bottom: 330px;
+
+}
 }
 
   /* @media (max-width: 576px) {
